@@ -9,9 +9,8 @@ app.use(express.json());
 
 const server = http.createServer(app);
 const io = new Server(server, {
-   cors: {
-    origin:[ 'https://ultimate-tic-tac-toe-sigma.vercel.app',
-    '*',],
+  cors: {
+    origin: ['https://ultimate-tic-tac-toe-sigma.vercel.app', '*'],
     methods: ["GET", "POST"]
 
   },
